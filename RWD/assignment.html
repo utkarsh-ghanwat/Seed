@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: purple;
+        }
+
+        table {
+            background-color: white
+            ;
+            margin-top: 50px;
+        }
+
+        button{
+            color: white;
+            background-color: purple;
+            margin-left: 20px;
+            margin: 30px;
+            border-radius: 3px;
+            width:auto;
+    
+        }
+
+        input{
+            padding: 5px;
+        }
+
+        #identity{
+            margin: 10px;
+        }
+
+        #Personal{
+            color: rgb(87, 86, 86);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <form>
+
+          
+            <table>
+
+                <tr>
+                    
+                    <th colspan="3">Registration</th>
+                    
+                </tr>
+                <tr>
+                    
+                    <th id="Personal">Personal details</th>
+                    
+                </tr>
+
+
+                <tr>
+                    <td>Full name</td>
+                    <td>DOB</td>
+                    <td>Email</td>
+                </tr>
+                <tr>
+                    <td><input type="text" placeholder="Enter your full name"></td>
+                    <td><input type="date" placeholder="Enter your dob"></td>
+                    <td><input type="email" placeholder="Enter your email"></td>
+                </tr>
+
+                <tr>
+                    <td>Mobile no.</td>
+                    <td>Gender</td>
+                    <td>Occupation</td>
+                </tr>
+                <tr>
+                    <td><input type="text" placeholder="Enter your mobile no"></td>
+                    <td><input type="text" placeholder="Enter your gender"></td>
+                    <td><input type="text" placeholder="Enter your occupation"></td>
+                </tr>
+                <tr>
+                    <th id="Identity">Identity details</th>
+                </tr>
+
+                <tr>
+                    <td>ID type</td>
+                    <td>ID number</td>
+                    <td>Issue Authority</td>
+                </tr>
+                <tr>
+                    <td><input type="text" placeholder="Enter your ID type"></td>
+                    <td><input type="text" placeholder="Enter your ID number"></td>
+                    <td><input type="text" placeholder="Enter your issue department"></td>
+                </tr>
+
+                <tr>
+                    <td>ID type</td>
+                    <td>ID number</td>
+                    <td>Issue Authority</td>
+                </tr>
+                <tr>
+                    <td><input type="text" placeholder="Enter your ID type"></td>
+                    <td><input type="text" placeholder="Enter your ID number"></td>
+                    <td><input type="text" placeholder="Enter your issue department"></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <button type="submit">Next</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>
