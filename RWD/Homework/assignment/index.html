@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            height: 100vh;
+            border: 1px solid black;
+        }
+
+        .left {
+            background-color: white;
+            padding: 30px;
+        }
+
+        .right {
+            background-color: purple;
+            padding: 30px;
+        }
+
+        h2{
+            margin-bottom: 20px;
+        }
+
+        
+        input {
+            margin-top: 10px;
+            padding-top: 30px;
+            text-align: left;
+            border-radius: 5px;
+            font-size: medium;
+            margin-top: 30px;
+            font-weight: 400;
+            padding-bottom: 20px;
+            padding-left: 5px;
+        }
+
+        button{
+            background-color: white;
+            color: black;
+            width: 100px;
+            height: 30px;
+            margin-top: 20px;
+        }
+
+        .full {
+            width:100%
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <diV class="container">
+        <div class="left">
+            <h2 style="color: purple;">General information</h2>
+            <input class="full" type="text" placeholder="Title"><br>
+
+            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="Last Name"><br>
+
+            <input class="full" type="text" placeholder="Position"><br>
+            <input class="full" type="text" placeholder="Position"><br>
+
+            <input type="text" placeholder="Business Arena">
+            <input type="text" placeholder="Employees"><br>
+        </div>
+
+
+        <div class="right">
+
+            <h2 style="color: white;">Contact Details</h2>
+
+            <input class="full" type="text" placeholder="street + Nr"><br>
+
+            <input class="full" type="text" placeholder="Additional information"><br>
+
+            <div class="row">
+                <input type="text" placeholder="Zip Code">
+                <input type="text" placeholder="Place">
+            </div>
+
+            <input class="full" type="text" placeholder="Country"><br>
+
+            <div class="row">
+                <input type="text" placeholder="code +">
+                <input type="text" placeholder="Phone number"><br>
+            </div>
+
+            <input class="full" type="text" placeholder="Your Email"><br>
+
+            <label>
+                <input style="margin-top: 20px;" type="checkbox">
+                I agree to the terms and conditions
+            </label>
+            <br>
+            <button>Register</button>
+        </div>
+    </diV>
+</body>
+
+</html>

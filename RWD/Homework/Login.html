@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: yellow;
+        }
+
+        label {
+            display: block;
+            margin: 5px 0 5px 0;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid white;
+            border-radius: 6px;
+            margin-bottom: 15px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: red;
+            color: white;
+            border: none;
+            border-radius: 6px;
+        }
+
+        a {
+            display: block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #0077cc;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login">
+        <form action="/Success.html">
+            <label for="username">User Name</label>
+            <input type="text" placeholder="Enter your username" id="username"><br>
+
+            <label for="password">Password</label>
+            <input type="password" placeholder="Enter your password" id="password"><br>
+
+            <button type="submit">Login</button>
+        </form>
+
+        
+            <a href="/Registration.html">Create Account</a>
+    </div>
+</body>
+
+</html>
