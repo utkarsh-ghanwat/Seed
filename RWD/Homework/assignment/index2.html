@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function valid() {
+        var f = document.myform.fname.value;
+        var l = document.myform.fname.value;
+
+        if (f == "") {
+            document.getElementById("fn").innerHTML = "Plz enter first name";
+            return false;
+        } else {
+            document.getElementById("fn").innerHTML = "";
+        }
+
+        if (l == "") {
+            document.getElementById("ln").innerHTML = "Plz enter last name";
+            return false;
+        } else {
+            document.getElementById("ln").innerHTML = "";
+        }
+
+        if ((document.myform.g[0].checked == false) && (document.myform.g[1].checked[false])) {
+            document.getElementById("gen").innerHTML = "plz select your gender";
+            return false;
+        } else {
+            document.getElementById("gen").innerHTML = "";
+        }
+    }
+</script>
+
+<body>
+    <form name="myform" onsubmit="return valid()">
+        <table>
+            <tr>
+                <td>First Name:<em>*</em></td>
+                <td><input type="text" name="fname" id="fname">
+                    <span id="fn"></span>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Last Name:<em>*</em></td>
+                <td><input type="text" name="lname" id="lname">
+                    <span id="fn"></span>
+                </td>
+
+            </tr>
+
+
+            <tr>
+                <td>Gender:<em>*</em></td>
+                <td><input type="radio" name="g" value="male">Male
+                    <input type="radio" name="g" value="female">Female
+                    <br><span id="gen"></span>
+                </td>
+
+
+            </tr>
+
+            <tr>
+                <td> </td>
+                <td><input type="submit" name="submit"></td>
+            </tr>
+
+
+        </table>
+
+    </form>
+</body>
+
+</html>
